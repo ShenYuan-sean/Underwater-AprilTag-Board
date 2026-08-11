@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="340.0mm" height="230.0mm" viewBox="0 0 340.000 230.000">
+<rect x="0" y="0" width="100%" height="100%" fill="#ffffff"/>
+<style>text{dominant-baseline:auto}.dim{fill:#555}.note{fill:#444}</style>
+<text x="12" y="14" font-family="Arial" font-size="6" fill="#111111" font-weight="700">PART B - VERTICAL BACKING / PRESS STRIP (QTY 12)</text>
+<text x="25" y="30" font-family="Arial" font-size="4.2" fill="#111111" font-weight="700">FRONT VIEW</text>
+<line x1="25" y1="32" x2="77" y2="32" stroke="#111111" stroke-width="0.35"/>
+<rect x="60" y="50" width="12" height="150" fill="#f8fafc" stroke="#111111" stroke-width="0.45"/>
+<circle cx="66" cy="178" r="1.7" fill="none" stroke="#d53f8c" stroke-width="0.55"/>
+<circle cx="66" cy="72" r="1.7" fill="none" stroke="#d53f8c" stroke-width="0.55"/>
+<line x1="48" y1="50" x2="48" y2="200" stroke="#666666" stroke-width="0.25"/>
+<line x1="46" y1="50" x2="50" y2="50" stroke="#666666" stroke-width="0.25"/>
+<line x1="46" y1="200" x2="50" y2="200" stroke="#666666" stroke-width="0.25"/>
+<text x="50.5" y="125" font-family="Arial" font-size="3.2" fill="#111111" class="dim">150</text>
+<line x1="60" y1="212" x2="72" y2="212" stroke="#666666" stroke-width="0.25"/>
+<line x1="60" y1="210" x2="60" y2="214" stroke="#666666" stroke-width="0.25"/>
+<line x1="72" y1="210" x2="72" y2="214" stroke="#666666" stroke-width="0.25"/>
+<text x="63.6" y="209.5" font-family="Arial" font-size="3.2" fill="#111111" class="dim">12</text>
+<text x="85" y="70" font-family="Arial" font-size="3.5" fill="#111111" class="note">2 x M3 clearance or tapped holes</text>
+<text x="85" y="82" font-family="Arial" font-size="3.5" fill="#111111" class="note">Hole Y: 22, 128 mm</text>
+<text x="190" y="30" font-family="Arial" font-size="4.2" fill="#111111" font-weight="700">RIGHT VIEW</text>
+<line x1="190" y1="32" x2="242" y2="32" stroke="#111111" stroke-width="0.35"/>
+<rect x="220" y="50" width="5" height="150" fill="#f8fafc" stroke="#111111" stroke-width="0.45"/>
+<line x1="220" y1="212" x2="225" y2="212" stroke="#666666" stroke-width="0.25"/>
+<line x1="220" y1="210" x2="220" y2="214" stroke="#666666" stroke-width="0.25"/>
+<line x1="225" y1="210" x2="225" y2="214" stroke="#666666" stroke-width="0.25"/>
+<text x="221.3" y="209.5" font-family="Arial" font-size="3.2" fill="#111111" class="dim">5</text>
+<line x1="235" y1="50" x2="235" y2="200" stroke="#666666" stroke-width="0.25"/>
+<line x1="233" y1="50" x2="237" y2="50" stroke="#666666" stroke-width="0.25"/>
+<line x1="233" y1="200" x2="237" y2="200" stroke="#666666" stroke-width="0.25"/>
+<text x="237.5" y="125" font-family="Arial" font-size="3.2" fill="#111111" class="dim">150</text>
+<text x="190" y="170" font-family="Arial" font-size="4.2" fill="#111111" font-weight="700">TOP VIEW</text>
+<line x1="190" y1="172" x2="242" y2="172" stroke="#111111" stroke-width="0.35"/>
+<rect x="220" y="190" width="12" height="5" fill="#f8fafc" stroke="#111111" stroke-width="0.45"/>
+<line x1="220" y1="205" x2="232" y2="205" stroke="#666666" stroke-width="0.25"/>
+<line x1="220" y1="203" x2="220" y2="207" stroke="#666666" stroke-width="0.25"/>
+<line x1="232" y1="203" x2="232" y2="207" stroke="#666666" stroke-width="0.25"/>
+<text x="223.6" y="202.5" font-family="Arial" font-size="3.2" fill="#111111" class="dim">12</text>
+</svg>

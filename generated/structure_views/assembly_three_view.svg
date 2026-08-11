@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="440.0mm" height="310.0mm" viewBox="0 0 440.000 310.000">
+<rect x="0" y="0" width="100%" height="100%" fill="#ffffff"/>
+<style>text{dominant-baseline:auto}.dim{fill:#555}.note{fill:#444}</style>
+<text x="12" y="14" font-family="Arial" font-size="6" fill="#111111" font-weight="700">ASSEMBLY - SIX BOARD HEX FIXTURE</text>
+<text x="25" y="30" font-family="Arial" font-size="4.2" fill="#111111" font-weight="700">TOP VIEW</text>
+<line x1="25" y1="32" x2="77" y2="32" stroke="#111111" stroke-width="0.35"/>
+<polygon points="323.8675,155.0000 234.4338,0.0962 55.5662,0.0962 -33.8675,155.0000 55.5662,309.9038 234.4338,309.9038" fill="#f8fafc" stroke="#111111" stroke-width="0.55"/>
+<polygon points="266.1325,155.0000 205.5662,50.0962 84.4338,50.0962 23.8675,155.0000 84.4338,259.9038 205.5662,259.9038" fill="#ffffff" stroke="#111111" stroke-width="0.55"/>
+<polygon points="293.5711,155.8250 218.5711,25.9212 221.4289,24.2712 296.4289,154.1750" fill="#fff5f7" stroke="#d53f8c" stroke-width="0.35"/>
+<text x="225.75" y="105.8375" font-family="Arial" font-size="4" fill="#444444">F1</text>
+<polygon points="220.0000,26.7462 70.0000,26.7462 70.0000,23.4462 220.0000,23.4462" fill="#fff5f7" stroke="#d53f8c" stroke-width="0.35"/>
+<text x="138" y="55.175" font-family="Arial" font-size="4" fill="#444444">F2</text>
+<polygon points="71.4289,25.9212 -3.5711,155.8250 -6.4289,154.1750 68.5711,24.2712" fill="#fff5f7" stroke="#d53f8c" stroke-width="0.35"/>
+<text x="50.25" y="105.8375" font-family="Arial" font-size="4" fill="#444444">F3</text>
+<polygon points="-3.5711,154.1750 71.4289,284.0788 68.5711,285.7288 -6.4289,155.8250" fill="#fff5f7" stroke="#d53f8c" stroke-width="0.35"/>
+<text x="50.25" y="207.1625" font-family="Arial" font-size="4" fill="#444444">F4</text>
+<polygon points="70.0000,283.2538 220.0000,283.2538 220.0000,286.5538 70.0000,286.5538" fill="#fff5f7" stroke="#d53f8c" stroke-width="0.35"/>
+<text x="138" y="257.825" font-family="Arial" font-size="4" fill="#444444">F5</text>
+<polygon points="218.5711,284.0788 293.5711,154.1750 296.4289,155.8250 221.4289,285.7288" fill="#fff5f7" stroke="#d53f8c" stroke-width="0.35"/>
+<text x="225.75" y="207.1625" font-family="Arial" font-size="4" fill="#444444">F6</text>
+<text x="112" y="161" font-family="Arial" font-size="3.8" fill="#d53f8c">SLOT 3.3 mm</text>
+<polygon points="293.7010,155.7500 218.7010,25.8462 221.2990,24.3462 296.2990,154.2500" fill="#111111" stroke="#111111" stroke-width="0.2" opacity="0.45"/>
+<polygon points="220.0000,26.5962 70.0000,26.5962 70.0000,23.5962 220.0000,23.5962" fill="#111111" stroke="#111111" stroke-width="0.2" opacity="0.45"/>
+<polygon points="71.2990,25.8462 -3.7010,155.7500 -6.2990,154.2500 68.7010,24.3462" fill="#111111" stroke="#111111" stroke-width="0.2" opacity="0.45"/>
+<polygon points="-3.7010,154.2500 71.2990,284.1538 68.7010,285.6538 -6.2990,155.7500" fill="#111111" stroke="#111111" stroke-width="0.2" opacity="0.45"/>
+<polygon points="70.0000,283.4038 220.0000,283.4038 220.0000,286.4038 70.0000,286.4038" fill="#111111" stroke="#111111" stroke-width="0.2" opacity="0.45"/>
+<polygon points="218.7010,284.1538 293.7010,154.2500 296.2990,155.7500 221.2990,285.6538" fill="#111111" stroke="#111111" stroke-width="0.2" opacity="0.45"/>
+<text x="45" y="282" font-family="Arial" font-size="3.5" fill="#111111" class="note">Black strips: six calibration boards, viewed from top.</text>
+<text x="310" y="30" font-family="Arial" font-size="4.2" fill="#111111" font-weight="700">FRONT VIEW</text>
+<line x1="310" y1="32" x2="362" y2="32" stroke="#111111" stroke-width="0.35"/>
+<rect x="295" y="68" width="150" height="150" fill="#ffffff" stroke="#111111" stroke-width="0.45"/>
+<rect x="295" y="60" width="150" height="8" fill="#f8fafc" stroke="#111111" stroke-width="0.45"/>
+<rect x="295" y="218" width="150" height="8" fill="#f8fafc" stroke="#111111" stroke-width="0.45"/>
+<circle cx="343" cy="196" r="1.7" fill="none" stroke="#d53f8c" stroke-width="0.45"/>
+<circle cx="343" cy="90" r="1.7" fill="none" stroke="#d53f8c" stroke-width="0.45"/>
+<circle cx="397" cy="196" r="1.7" fill="none" stroke="#d53f8c" stroke-width="0.45"/>
+<circle cx="397" cy="90" r="1.7" fill="none" stroke="#d53f8c" stroke-width="0.45"/>
+<text x="301" y="82" font-family="Arial" font-size="3.3" fill="#111111" class="note">TOP RING</text>
+<text x="301" y="224" font-family="Arial" font-size="3.3" fill="#111111" class="note">BOTTOM RING</text>
+<line x1="283" y1="60" x2="283" y2="226" stroke="#666666" stroke-width="0.25"/>
+<line x1="281" y1="60" x2="285" y2="60" stroke="#666666" stroke-width="0.25"/>
+<line x1="281" y1="226" x2="285" y2="226" stroke="#666666" stroke-width="0.25"/>
+<text x="285.5" y="143" font-family="Arial" font-size="3.2" fill="#111111" class="dim">166 total</text>
+<text x="310" y="245" font-family="Arial" font-size="4.2" fill="#111111" font-weight="700">RIGHT VIEW</text>
+<line x1="310" y1="247" x2="362" y2="247" stroke="#111111" stroke-width="0.35"/>
+<rect x="330" y="268" width="3" height="28" fill="#111111" opacity="0.45"/>
+<rect x="325" y="265" width="6.6" height="8" fill="#f8fafc" stroke="#111111" stroke-width="0.35"/>
+<text x="345" y="284" font-family="Arial" font-size="3.3" fill="#111111" class="note">slot 3.3</text>
+</svg>

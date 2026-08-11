@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="420.0mm" height="295.0mm" viewBox="0 0 420.000 295.000">
+<rect x="0" y="0" width="100%" height="100%" fill="#ffffff"/>
+<style>text{dominant-baseline:auto}.dim{fill:#555}.note{fill:#444}</style>
+<text x="12" y="14" font-family="Arial" font-size="6" fill="#111111" font-weight="700">PART A - TOP/BOTTOM HEX RING PLATE (QTY 2)</text>
+<text x="25" y="30" font-family="Arial" font-size="4.2" fill="#111111" font-weight="700">TOP VIEW</text>
+<line x1="25" y1="32" x2="77" y2="32" stroke="#111111" stroke-width="0.35"/>
+<polygon points="323.8675,155.0000 234.4338,0.0962 55.5662,0.0962 -33.8675,155.0000 55.5662,309.9038 234.4338,309.9038" fill="#f8fafc" stroke="#111111" stroke-width="0.55"/>
+<polygon points="266.1325,155.0000 205.5662,50.0962 84.4338,50.0962 23.8675,155.0000 84.4338,259.9038 205.5662,259.9038" fill="#ffffff" stroke="#111111" stroke-width="0.55"/>
+<polygon points="293.5711,155.8250 218.5711,25.9212 221.4289,24.2712 296.4289,154.1750" fill="#fff5f7" stroke="#d53f8c" stroke-width="0.35"/>
+<text x="225.75" y="105.8375" font-family="Arial" font-size="4" fill="#444444">F1</text>
+<polygon points="220.0000,26.7462 70.0000,26.7462 70.0000,23.4462 220.0000,23.4462" fill="#fff5f7" stroke="#d53f8c" stroke-width="0.35"/>
+<text x="138" y="55.175" font-family="Arial" font-size="4" fill="#444444">F2</text>
+<polygon points="71.4289,25.9212 -3.5711,155.8250 -6.4289,154.1750 68.5711,24.2712" fill="#fff5f7" stroke="#d53f8c" stroke-width="0.35"/>
+<text x="50.25" y="105.8375" font-family="Arial" font-size="4" fill="#444444">F3</text>
+<polygon points="-3.5711,154.1750 71.4289,284.0788 68.5711,285.7288 -6.4289,155.8250" fill="#fff5f7" stroke="#d53f8c" stroke-width="0.35"/>
+<text x="50.25" y="207.1625" font-family="Arial" font-size="4" fill="#444444">F4</text>
+<polygon points="70.0000,283.2538 220.0000,283.2538 220.0000,286.5538 70.0000,286.5538" fill="#fff5f7" stroke="#d53f8c" stroke-width="0.35"/>
+<text x="138" y="257.825" font-family="Arial" font-size="4" fill="#444444">F5</text>
+<polygon points="218.5711,284.0788 293.5711,154.1750 296.4289,155.8250 221.4289,285.7288" fill="#fff5f7" stroke="#d53f8c" stroke-width="0.35"/>
+<text x="225.75" y="207.1625" font-family="Arial" font-size="4" fill="#444444">F6</text>
+<text x="112" y="161" font-family="Arial" font-size="3.8" fill="#d53f8c">SLOT 3.3 mm</text>
+<line x1="-5" y1="270" x2="295" y2="270" stroke="#666666" stroke-width="0.25"/>
+<line x1="-5" y1="268" x2="-5" y2="272" stroke="#666666" stroke-width="0.25"/>
+<line x1="295" y1="268" x2="295" y2="272" stroke="#666666" stroke-width="0.25"/>
+<text x="115" y="267.5" font-family="Arial" font-size="3.2" fill="#111111" class="dim">panel hex corner span 300</text>
+<text x="300" y="30" font-family="Arial" font-size="4.2" fill="#111111" font-weight="700">FRONT VIEW</text>
+<line x1="300" y1="32" x2="352" y2="32" stroke="#111111" stroke-width="0.35"/>
+<rect x="285" y="65" width="105" height="8" fill="#f8fafc" stroke="#111111" stroke-width="0.45"/>
+<rect x="332" y="65" width="16" height="8" fill="#fff5f7" stroke="#d53f8c" stroke-width="0.35"/>
+<line x1="285" y1="83" x2="390" y2="83" stroke="#666666" stroke-width="0.25"/>
+<line x1="285" y1="81" x2="285" y2="85" stroke="#666666" stroke-width="0.25"/>
+<line x1="390" y1="81" x2="390" y2="85" stroke="#666666" stroke-width="0.25"/>
+<text x="318.3" y="80.5" font-family="Arial" font-size="3.2" fill="#111111" class="dim">one edge section</text>
+<line x1="397" y1="65" x2="397" y2="73" stroke="#666666" stroke-width="0.25"/>
+<line x1="395" y1="65" x2="399" y2="65" stroke="#666666" stroke-width="0.25"/>
+<line x1="395" y1="73" x2="399" y2="73" stroke="#666666" stroke-width="0.25"/>
+<text x="399.5" y="69" font-family="Arial" font-size="3.2" fill="#111111" class="dim">8 thick</text>
+<text x="286" y="100" font-family="Arial" font-size="3.5" fill="#111111" class="note">Through slot is shown in pink.</text>
+<text x="300" y="130" font-family="Arial" font-size="4.2" fill="#111111" font-weight="700">RIGHT VIEW</text>
+<line x1="300" y1="132" x2="352" y2="132" stroke="#111111" stroke-width="0.35"/>
+<rect x="315" y="160" width="50" height="8" fill="#f8fafc" stroke="#111111" stroke-width="0.45"/>
+<rect x="337" y="160" width="13.2" height="8" fill="#fff5f7" stroke="#d53f8c" stroke-width="0.35"/>
+<line x1="315" y1="178" x2="365" y2="178" stroke="#666666" stroke-width="0.25"/>
+<line x1="315" y1="176" x2="315" y2="180" stroke="#666666" stroke-width="0.25"/>
+<line x1="365" y1="176" x2="365" y2="180" stroke="#666666" stroke-width="0.25"/>
+<text x="324.4" y="175.5" font-family="Arial" font-size="3.2" fill="#111111" class="dim">ring width 50</text>
+<line x1="372" y1="160" x2="372" y2="168" stroke="#666666" stroke-width="0.25"/>
+<line x1="370" y1="160" x2="374" y2="160" stroke="#666666" stroke-width="0.25"/>
+<line x1="370" y1="168" x2="374" y2="168" stroke="#666666" stroke-width="0.25"/>
+<text x="374.5" y="164" font-family="Arial" font-size="3.2" fill="#111111" class="dim">8 thick</text>
+<text x="300" y="205" font-family="Arial" font-size="3.5" fill="#111111" class="note">Material suggestion: POM or 6061 anodized.</text>
+</svg>

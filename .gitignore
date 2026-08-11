@@ -1,0 +1,21 @@
+# Local Python/Conda environments
+.conda/
+.venv/
+venv/
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Local agent metadata
+.agents/
+
+# Reproducible detection previews
+check_detected/
+generated/verification_debug/
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

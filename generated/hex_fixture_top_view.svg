@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="352.771mm" height="313.008mm" viewBox="0 0 352.771281 313.007621" shape-rendering="crispEdges">
+<desc>AprilTag 36h11 calibration boards, units in millimeters.</desc>
+<polygon points="326.385641,156.503811 251.385641,26.600000 101.385641,26.600000 26.385641,156.503811 101.385641,286.407621 251.385641,286.407621" fill="none" stroke="#111111" stroke-width="0.6"/>
+<polygon points="325.000000,157.303811 250.000000,27.400000 252.771281,25.800000 327.771281,155.703811" fill="none" stroke="#d53f8c" stroke-width="0.35"/>
+<polygon points="251.385641,28.200000 101.385641,28.200000 101.385641,25.000000 251.385641,25.000000" fill="none" stroke="#d53f8c" stroke-width="0.35"/>
+<polygon points="102.771281,27.400000 27.771281,157.303811 25.000000,155.703811 100.000000,25.800000" fill="none" stroke="#d53f8c" stroke-width="0.35"/>
+<polygon points="27.771281,155.703811 102.771281,285.607621 100.000000,287.207621 25.000000,157.303811" fill="none" stroke="#d53f8c" stroke-width="0.35"/>
+<polygon points="101.385641,284.807621 251.385641,284.807621 251.385641,288.007621 101.385641,288.007621" fill="none" stroke="#d53f8c" stroke-width="0.35"/>
+<polygon points="250.000000,285.607621 325.000000,155.703811 327.771281,157.303811 252.771281,287.207621" fill="none" stroke="#d53f8c" stroke-width="0.35"/>
+<line x1="176.385641" y1="156.503811" x2="288.885641" y2="91.551905" stroke="#718096" stroke-width="0.25"/>
+<text x="288.885641" y="91.551905" font-size="5" font-family="Arial" fill="#2d3748">FACE 1</text>
+<line x1="176.385641" y1="156.503811" x2="176.385641" y2="26.600000" stroke="#718096" stroke-width="0.25"/>
+<text x="176.385641" y="26.600000" font-size="5" font-family="Arial" fill="#2d3748">FACE 2</text>
+<line x1="176.385641" y1="156.503811" x2="63.885641" y2="91.551905" stroke="#718096" stroke-width="0.25"/>
+<text x="63.885641" y="91.551905" font-size="5" font-family="Arial" fill="#2d3748">FACE 3</text>
+<line x1="176.385641" y1="156.503811" x2="63.885641" y2="221.455716" stroke="#718096" stroke-width="0.25"/>
+<text x="63.885641" y="221.455716" font-size="5" font-family="Arial" fill="#2d3748">FACE 4</text>
+<line x1="176.385641" y1="156.503811" x2="176.385641" y2="286.407621" stroke="#718096" stroke-width="0.25"/>
+<text x="176.385641" y="286.407621" font-size="5" font-family="Arial" fill="#2d3748">FACE 5</text>
+<line x1="176.385641" y1="156.503811" x2="288.885641" y2="221.455716" stroke="#718096" stroke-width="0.25"/>
+<text x="288.885641" y="221.455716" font-size="5" font-family="Arial" fill="#2d3748">FACE 6</text>
+<text x="10" y="301.007621" font-size="4.5" font-family="Arial" fill="#2d3748">Top-view fixture concept: 150 mm sides, 60 deg face spacing</text>
+</svg>
