@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="300.000mm" height="300.000mm" viewBox="0 0 300.000000 300.000000" shape-rendering="crispEdges">
+<desc>Reservoir AprilTag 36h11 board; all SVG units are millimeters.</desc>
+<rect x="0.000000" y="0.000000" width="300.000000" height="300.000000" fill="#ffffff" stroke="#111111" stroke-width="0.5"/>
+<text x="150.000000" y="150.000000" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#111111">4 x DIA 5.2 mm; X=96/204, Y=44/256 mm</text>
+<circle cx="96.000000" cy="256.000000" r="2.600000" fill="none" stroke="#d53f8c" stroke-width="0.7"/>
+<line x1="90.000000" y1="256.000000" x2="102.000000" y2="256.000000" stroke="#d53f8c" stroke-width="0.3"/>
+<line x1="96.000000" y1="250.000000" x2="96.000000" y2="262.000000" stroke="#d53f8c" stroke-width="0.3"/>
+<circle cx="204.000000" cy="256.000000" r="2.600000" fill="none" stroke="#d53f8c" stroke-width="0.7"/>
+<line x1="198.000000" y1="256.000000" x2="210.000000" y2="256.000000" stroke="#d53f8c" stroke-width="0.3"/>
+<line x1="204.000000" y1="250.000000" x2="204.000000" y2="262.000000" stroke="#d53f8c" stroke-width="0.3"/>
+<circle cx="96.000000" cy="44.000000" r="2.600000" fill="none" stroke="#d53f8c" stroke-width="0.7"/>
+<line x1="90.000000" y1="44.000000" x2="102.000000" y2="44.000000" stroke="#d53f8c" stroke-width="0.3"/>
+<line x1="96.000000" y1="38.000000" x2="96.000000" y2="50.000000" stroke="#d53f8c" stroke-width="0.3"/>
+<circle cx="204.000000" cy="44.000000" r="2.600000" fill="none" stroke="#d53f8c" stroke-width="0.7"/>
+<line x1="198.000000" y1="44.000000" x2="210.000000" y2="44.000000" stroke="#d53f8c" stroke-width="0.3"/>
+<line x1="204.000000" y1="38.000000" x2="204.000000" y2="50.000000" stroke="#d53f8c" stroke-width="0.3"/>
+</svg>
