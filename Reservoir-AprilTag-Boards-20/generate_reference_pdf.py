@@ -9,7 +9,13 @@ from reportlab.lib.pagesizes import A4, landscape
 from reportlab.lib.units import mm
 from reportlab.pdfgen import canvas
 
-from generate_reservoir_boards import Config, TagSpec, marker_grid, tag_specs_for_board
+from generate_reservoir_boards import (
+    Config,
+    TagSpec,
+    marker_grid,
+    tag_specs_for_board,
+    validate_config,
+)
 
 
 PAGE_SIZE = landscape(A4)
@@ -135,11 +141,12 @@ def draw_detail_panel(
 ) -> None:
     tags = tag_specs_for_board(board_index, cfg)
     first_id, last_id = tags[0].tag_id, tags[-1].tag_id
+    board_number = cfg.board_number_start + board_index
 
     pdf.saveState()
     pdf.setFillColor(DARK)
     pdf.setFont("Helvetica-Bold", 15)
-    pdf.drawString(panel_x, panel_y, f"BOARD {board_index + 1:02d}")
+    pdf.drawString(panel_x, panel_y, f"BOARD {board_number:02d}")
     pdf.setFont("Helvetica", 9)
     pdf.setFillColor(GRAY)
     pdf.drawString(panel_x, panel_y - 7 * mm, f"Center ID {first_id} | IDs {first_id}-{last_id}")
@@ -204,7 +211,7 @@ def draw_detail_panel(
     for index, note in enumerate(notes):
         pdf.drawString(panel_x, note_y - index * 4.2 * mm, note)
 
-    dxf_name = f"board_{board_index + 1:02d}_ids_{first_id:03d}-{last_id:03d}.dxf"
+    dxf_name = f"board_{board_number:02d}_ids_{first_id:03d}-{last_id:03d}.dxf"
     pdf.setFillColor(DARK)
     pdf.setFont("Helvetica-Bold", 6.5)
     pdf.drawString(panel_x, 12 * mm, dxf_name)
@@ -213,9 +220,13 @@ def draw_detail_panel(
 
 def generate_pdf(path: Path, cfg: Config) -> None:
     dictionary = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_APRILTAG_36h11)
+    validate_config(cfg, dictionary)
     path.parent.mkdir(parents=True, exist_ok=True)
     pdf = canvas.Canvas(str(path), pagesize=PAGE_SIZE, pageCompression=1)
-    pdf.setTitle("Reservoir AprilTag 20 Board DXF Reference")
+    board_number_end = cfg.board_number_start + cfg.board_count - 1
+    pdf.setTitle(
+        f"Reservoir AprilTag Boards {cfg.board_number_start}-{board_number_end} DXF Reference"
+    )
     pdf.setAuthor("Ocean Hub")
     page_w, page_h = PAGE_SIZE
 
@@ -246,18 +257,25 @@ def generate_pdf(path: Path, cfg: Config) -> None:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Generate a 20-page PDF reference for the DXF board set.")
+    parser = argparse.ArgumentParser(description="Generate a PDF reference for a reservoir board set.")
     parser.add_argument(
         "--out",
         type=Path,
         default=Path("output") / "pdf" / "reservoir_apriltag_20_board_reference.pdf",
     )
+    parser.add_argument("--board-count", type=int, default=20)
+    parser.add_argument("--board-number-start", type=int, default=1)
+    parser.add_argument("--start-id", type=int, default=100)
     return parser.parse_args()
 
 
 def main() -> None:
     args = parse_args()
-    cfg = Config()
+    cfg = Config(
+        board_count=args.board_count,
+        board_number_start=args.board_number_start,
+        start_id=args.start_id,
+    )
     generate_pdf(args.out, cfg)
     print(f"Wrote PDF reference: {args.out.resolve()}")
 

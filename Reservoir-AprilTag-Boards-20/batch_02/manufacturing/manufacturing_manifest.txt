@@ -1,0 +1,21 @@
+Reservoir AprilTag board manufacturing manifest
+
+Tag family: AprilTag 36h11
+Board count: 20
+Board numbers: 21-40
+Tags per board: 9 (one center plus eight outer tags)
+ID range: 280-459
+Board size: 300.0 x 300.0 mm
+Center black marker size: 128.0 x 128.0 mm
+Outer black marker size: 44.0 x 44.0 mm
+Marker modules: 8 x 8
+Center module / quiet zone: 16.000 / 10.0 mm
+Outer module / quiet zone: 5.500 / 8.0 mm
+Outer tag grid centers: 44.0, 150.0, 256.0 mm
+Mounting holes: 4 x diameter 5.2 mm
+Hole centers from lower-left: (96.0, 44.0), (204.0, 44.0), (96.0, 256.0), (204.0, 256.0)
+
+Print at 100% scale. Do not use fit-to-page.
+Keep the entire quiet zone matte white and free of fasteners, stains, text, or seams.
+The SVG files contain physical millimeter dimensions; DXF uses millimeters.
+The clean SVG is print artwork. The guide SVG is for inspection and drilling reference.

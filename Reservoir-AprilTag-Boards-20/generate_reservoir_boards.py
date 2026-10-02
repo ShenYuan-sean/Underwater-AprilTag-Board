@@ -42,6 +42,7 @@ VECTOR_GLYPHS = {
 @dataclass(frozen=True)
 class Config:
     board_count: int = 20
+    board_number_start: int = 1
     board_mm: float = 300.0
     tags_per_board: int = 9
     center_tag_mm: float = 128.0
@@ -294,6 +295,8 @@ def circle_intersects_rect(
 def validate_config(cfg: Config, dictionary: cv2.aruco.Dictionary) -> None:
     if cfg.board_count <= 0:
         raise ValueError("board_count must be positive")
+    if cfg.board_number_start <= 0:
+        raise ValueError("board_number_start must be positive")
     if cfg.tags_per_board != 9:
         raise ValueError("This layout requires exactly nine tags per board")
     if cfg.board_mm <= 0 or cfg.center_tag_mm <= 0 or cfg.small_tag_mm <= 0:
@@ -630,11 +633,12 @@ def write_id_map(path: Path, cfg: Config) -> None:
             ]
         )
         for board_index in range(cfg.board_count):
+            board_number = cfg.board_number_start + board_index
             for tag in tag_specs_for_board(board_index, cfg):
                 writer.writerow(
                     [
-                        board_index + 1,
-                        f"R{board_index + 1:02d}",
+                        board_number,
+                        f"R{board_number:02d}",
                         "AprilTag 36h11",
                         tag.tag_id,
                         tag.name,
@@ -669,10 +673,11 @@ def write_deployment_template(path: Path, cfg: Config) -> None:
             ]
         )
         for board_index in range(cfg.board_count):
+            board_number = cfg.board_number_start + board_index
             tags = tag_specs_for_board(board_index, cfg)
             writer.writerow(
                 [
-                    f"R{board_index + 1:02d}",
+                    f"R{board_number:02d}",
                     tags[0].tag_id,
                     f"{tags[0].tag_id}-{tags[-1].tag_id}",
                     "",
@@ -696,6 +701,7 @@ def write_manifest(path: Path, cfg: Config) -> None:
         "",
         "Tag family: AprilTag 36h11",
         f"Board count: {cfg.board_count}",
+        f"Board numbers: {cfg.board_number_start}-{cfg.board_number_start + cfg.board_count - 1}",
         f"Tags per board: {cfg.tags_per_board} (one center plus eight outer tags)",
         f"ID range: {cfg.start_id}-{last_id}",
         f"Board size: {cfg.board_mm:.1f} x {cfg.board_mm:.1f} mm",
@@ -717,9 +723,10 @@ def write_manifest(path: Path, cfg: Config) -> None:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Generate 20 independent 300 mm reservoir AprilTag boards.")
+    parser = argparse.ArgumentParser(description="Generate independent 300 mm reservoir AprilTag boards.")
     parser.add_argument("--out", type=Path, default=Path("generated"))
     parser.add_argument("--board-count", type=int, default=20)
+    parser.add_argument("--board-number-start", type=int, default=1)
     parser.add_argument("--board-mm", type=float, default=300.0)
     parser.add_argument("--center-tag-mm", type=float, default=128.0)
     parser.add_argument("--small-tag-mm", type=float, default=44.0)
@@ -738,6 +745,7 @@ def main() -> None:
     args = parse_args()
     cfg = Config(
         board_count=args.board_count,
+        board_number_start=args.board_number_start,
         board_mm=args.board_mm,
         center_tag_mm=args.center_tag_mm,
         small_tag_mm=args.small_tag_mm,
@@ -755,8 +763,9 @@ def main() -> None:
     args.out.mkdir(parents=True, exist_ok=True)
 
     for board_index in range(cfg.board_count):
+        board_number = cfg.board_number_start + board_index
         tags = tag_specs_for_board(board_index, cfg)
-        stem = f"board_{board_index + 1:02d}_ids_{tags[0].tag_id:03d}-{tags[-1].tag_id:03d}"
+        stem = f"board_{board_number:02d}_ids_{tags[0].tag_id:03d}-{tags[-1].tag_id:03d}"
         write_board_svg(args.out / f"{stem}.svg", dictionary, board_index, cfg, guide=False)
         write_board_svg(args.out / f"{stem}_guide.svg", dictionary, board_index, cfg, guide=True)
         write_board_dxf(args.out / f"{stem}.dxf", dictionary, board_index, cfg, guide=False)

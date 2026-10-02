@@ -1,6 +1,11 @@
-# 水库 20 块 AprilTag 定位板
+# 水库 AprilTag 定位板（两批共 40 块）
 
-本工程生成 20 块独立的 `300 mm × 300 mm` 水库定位板。参考原六面标定板，每块板使用“一个中央大 Tag + 八个外围小 Tag”的 AprilTag 36h11 九宫格布局。共使用唯一 ID `100–279`，避免与 `Underwater-AprilTag-Board` 中已有的 `0–53` 冲突。
+本工程管理两批共 40 块独立的 `300 mm × 300 mm` 水库定位板。参考原六面标定板，每块板使用“一个中央大 Tag + 八个外围小 Tag”的 AprilTag 36h11 九宫格布局。共使用唯一 ID `100–459`，避免与 `Underwater-AprilTag-Board` 中已有的 `0–53` 冲突。
+
+| 批次 | 板号 | Tag ID | 文件位置 |
+|---|---|---|---|
+| 第一批（已加工） | R01–R20 | 100–279 | `generated/`、`加工厂复核/` |
+| 第二批（本次新增） | R21–R40 | 280–459 | `batch_02/generated/`、`batch_02/output/pdf/` |
 
 ## 推荐方案
 
@@ -9,7 +14,7 @@
 | 板材外形 | 300 mm × 300 mm |
 | 每板 Tag 数量 | 9 |
 | Tag 家族 | AprilTag 36h11 |
-| ID | 100–279 |
+| ID | 100–459（两批合计） |
 | 中央黑色码区 | 128 mm × 128 mm |
 | 外围黑色码区 | 44 mm × 44 mm |
 | 中央/小 Tag 单元格 | 16 mm / 5.5 mm |
@@ -34,7 +39,7 @@
 左下=base+6    下=base+7      右下=base+8
 ```
 
-例如 R01 使用 `100–108`，R20 使用 `271–279`。
+例如 R01 使用 `100–108`，R20 使用 `271–279`，R21 使用 `280–288`，R40 使用 `451–459`。
 
 ## 为什么采用一大八小
 
@@ -49,7 +54,7 @@
 
 ## 输出文件
 
-运行生成器后，`generated/` 包含：
+第一批的 `generated/` 包含：
 
 - `board_01_ids_100-108.svg` 到 `board_20_ids_271-279.svg`：用于印刷的干净 SVG；
 - `board_XX_ids_XXX-XXX_guide.svg`：包含 quiet zone、Tag 边界、ID 和钻孔位置的检查图；
@@ -60,6 +65,8 @@
 - `deployment_survey_template.csv`：部署位置和姿态测量记录模板；
 - `manifest.txt`：生产尺寸摘要。
 - `output/pdf/reservoir_apriltag_20_board_reference.pdf`：20 页 DXF 图案和孔位对照册。
+
+第二批的 `batch_02/generated/` 使用相同结构，文件名从 `board_21_ids_280-288` 到 `board_40_ids_451-459`。加工厂交付目录位于 `batch_02/manufacturing/`，可直接发送的压缩包为 `batch_02/reservoir_apriltag_boards_21-40_manufacturing.zip`，参考对照册为 `batch_02/output/pdf/reservoir_apriltag_boards_21-40_reference.pdf`。
 
 干净 SVG 不画钻孔辅助圆，避免钻孔标记混入印刷图案；钻孔位置在 guide SVG 和所有 DXF 文件中给出。
 每块板正面左下边缘只印中央大 Tag 的可读编号，例如第一块为 `ID = 100`；不再印 `R01–R20` 板号。该文字位于外围 Tag 的 quiet zone 之外。
@@ -79,6 +86,26 @@
 conda run -n rss_depth python generate_reservoir_boards.py
 conda run -n rss_depth python verify_reservoir_boards.py --no-debug
 conda run -n rss_depth python generate_reference_pdf.py
+```
+
+生成并验证第二批 R21–R40：
+
+```powershell
+conda run -n rss_depth python generate_reservoir_boards.py `
+  --out batch_02/generated `
+  --board-count 20 `
+  --board-number-start 21 `
+  --start-id 280
+
+conda run -n rss_depth python verify_reservoir_boards.py `
+  --input-dir batch_02/generated `
+  --no-debug
+
+conda run -n rss_depth python generate_reference_pdf.py `
+  --out batch_02/output/pdf/reservoir_apriltag_boards_21-40_reference.pdf `
+  --board-count 20 `
+  --board-number-start 21 `
+  --start-id 280
 ```
 
 如果以后需要独立重建环境：

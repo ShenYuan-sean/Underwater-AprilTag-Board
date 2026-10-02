@@ -3,7 +3,7 @@
 本仓库包含两套使用 AprilTag 36h11 的水下标定与定位板工程：
 
 - 当前根目录：6 块 `150 mm × 150 mm` 六面全向标定板，Tag ID 为 `0–53`。
-- [`Reservoir-AprilTag-Boards-20/`](Reservoir-AprilTag-Boards-20/)：20 块 `300 mm × 300 mm` 水库定位板，Tag ID 为 `100–279`，包含四个 `5.2 mm` 安装孔、加工用 DXF/SVG、参考 PDF 和加工厂确认图。
+- [`Reservoir-AprilTag-Boards-20/`](Reservoir-AprilTag-Boards-20/)：两批共 40 块 `300 mm × 300 mm` 水库定位板，Tag ID 为 `100–459`，包含四个 `5.2 mm` 安装孔、加工用 DXF/SVG、参考 PDF 和第一批加工厂确认图。
 
 ## 6-Face AprilTag 36h11 Calibration Board
 
